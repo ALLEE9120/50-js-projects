@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,300;1,400;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anuphan', ' Montserrat';
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 90vh;
+}
+
+.panel {
+  height: 80vh;
+  border-radius: 100px;
+  margin: 15px;
+  background-size: cover;
+  flex: 0.5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: end
+}
+
+.panel h3 {
+  color: white;
+}
+.panel:hover {
+  filter: brightness(90%)
+}
+
+.panel.active {
+  flex: 5;
+
+}
