@@ -4,31 +4,32 @@ const circles = document.querySelectorAll('.circle');
 const progress = document.querySelector('.progress')
 let counter = 1;
 next.addEventListener('click', () => {
-  increasecounter();
+  counter++;
   update();
+  increasecounter();
+
 }
 );
 
 prev.addEventListener('click', () => {
-  decreasecounter();
+  counter--;
   update();
+  decreasecounter();
 }
 );
 
 function increasecounter() {
   if (counter > 3) {
-    disabled = true
-  } else {
-    counter++;
+    next.disabled = true
   }
+  prev.disabled = false
 }
 
 function decreasecounter() {
   if (counter < 2) {
-    disabled = true
-  } else {
-    counter--;
+    prev.disabled = true
   }
+  next.disabled = false
 }
 
 function update() {
