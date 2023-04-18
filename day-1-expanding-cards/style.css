@@ -12,11 +12,13 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    background: #232223;
 }
 
 .container {
   display: flex;
-  width: 90vh;
+  width: 130vh;
+  justify-content: center;
 }
 
 .panel {
@@ -24,17 +26,21 @@ body {
   border-radius: 100px;
   margin: 15px;
   background-size: cover;
-  flex: 0.5;
+  flex: 0.2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   position: relative;
   display:flex;
   justify-content: center;
-  align-items: end
+  align-items: end;
+  transition: flex, 0.8s;
 }
 
 .panel h3 {
   color: white;
+  font-size: 29px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .panel:hover {
   filter: brightness(90%)
@@ -42,5 +48,4 @@ body {
 
 .panel.active {
   flex: 5;
-
 }
