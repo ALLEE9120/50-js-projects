@@ -4,11 +4,140 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Anuphan', ' Montserrat';
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  font-family: 'Anuphan', ' Montserrat';
+  margin: 0;
+  background-color: #222;
+  overflow-x: hidden;
+}
+
+.container {
+  min-height: 100vh;
+  transition: all 0.5s ease;
+  width: 220vh;
+}
+
+.container.show-nav {
+  transform-origin: top left;
+  transform: rotate(-20deg);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding-bottom: 90px;
+}
+
+.text {
+  margin-top: 50px;
+  width: 90vh;
+}
+
+._350z {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.circle {
+  background-color: #ffbd23;
+  color: #fff;
+  border: none;
+  height: 180px;
+  width: 180px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -90px;
+  left: -90px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.circle.show-nav {
+  transform: rotate(-74deg);
+}
+
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#nav {
+  position: relative;
+  top: 20%;
+  left: 3%;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+#close {
+  position: relative;
+  top: 20%;
+  left: -7%;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+nav {
+  color: #fff;
+  position: relative;
+  top: -720px;
+  left: -163px;
+  transform: rotate(20deg);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: -20px;
+  letter-spacing: 2px;
+}
+
+nav ul li {
+  margin: 40px 0;
+}
+
+nav ul li i {
+  margin-right: 15px;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+}
+
+nav ul li + li + li {
+  margin-left: 30px;
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text p {
+  color: #333;
+}
+
+.text .author {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #555;
+  font-style: italic;
+  font-size: 0.8rem;
 }
