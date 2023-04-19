@@ -16,11 +16,13 @@ body {
   min-height: 100vh;
   transition: all 0.5s ease;
   width: 220vh;
+  height: 100vh;
 }
 
 .container.show-nav {
   transform-origin: top left;
   transform: rotate(-20deg);
+  height: 100vh;
 }
 
 .center {
@@ -106,6 +108,7 @@ nav ul {
   padding: 0;
   margin: -20px;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 nav ul li {
