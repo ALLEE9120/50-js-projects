@@ -4,11 +4,24 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Anuphan', ' Montserrat';
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+  font-family: 'Anuphan', ' Montserrat';
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+}
+
+.page {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.pexels.com/photos/2372739/pexels-photo-2372739.jpeg?cs=srgb&dl=pexels-aleksandar-pasaric-2372739.jpg&fm=jpg")
+   no-repeat center center/cover;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: calc(100% + 50px);
+  height: calc(100% + 50px);
+  z-index: -1;
+  filter: blur(0px);
 }
