@@ -1,5 +1,6 @@
 const page = document.querySelector('.page');
 const loadingText = document.querySelector('.loading-text');
+const text = document.querySelectorAll('.text');
 
 let load = 0;
 
@@ -15,10 +16,11 @@ function blurring() {
   loadingText.innerText = `${load}%`;
   loadingText.style.opacity = 1 - load/120;
   page.style.filter = `blur(${30 - load / 3}px)`;
+  text.forEach((item) => {
+    item.style.filter = `blur(${30 - load / 3}px)`;
+  })
 
   if (load === 100) {
     loadingText.style.opacity = 0;
   }
-
-  console.log(load)
 }
