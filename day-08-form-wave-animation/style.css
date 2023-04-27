@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,300;1,400;1,500&display=swap');
 
 * {
-    box-sizing: border-box;
 }
 body {
     font-family: 'Anuphan', ' Montserrat';
@@ -17,10 +16,10 @@ body {
 .login-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
   color:white;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   background-color: #233f85;
   border-radius: 5px;
   transition: all 0.5s ease;
@@ -28,7 +27,6 @@ body {
 
 .input {
   padding: 10px;
-  padding-top: 28px;
   margin: 10px;
   border: none;
   outline: none;
@@ -39,16 +37,6 @@ body {
   border-bottom: 1px solid white;
   width: 90%;
   transition: all 0.5s ease;
-}
-
-::placeholder {
-  color: white;
-  transition: all 0.5s ease;
-}
-
-.active::placeholder {
-  position: relative;
-  top: -23px;
 }
 
 #login-button {
@@ -74,10 +62,40 @@ button {
   font-size: 16px;
   font-family: 'Anuphan', ' Montserrat';
   background-color: transparent;
-  color: #7dabe3;
+  color:  #7dabe3;
   cursor: pointer;
 }
 
 .container {
-  width: 45%;
+  display: flex;
+  flex-direction: column;
+  color:white;
+  background-color: #233f85;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  width: 400px;
+}
+
+
+.text {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+.login-form label {
+  position: relative;
+  top: -45px;
+  left: 20px;
+}
+
+.login-form span {
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.5, -0.55, 0.265, 1.55);
+}
+
+.login-form input:focus + label span,
+.login-form input:valid + label span:focus {
+  color: lightblue;
+  transform: translateY(-22px);
 }

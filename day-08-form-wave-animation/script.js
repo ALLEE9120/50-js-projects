@@ -1,11 +1,8 @@
-const inputs = document.querySelectorAll(".input");
+const labels = document.querySelectorAll("label");
 
-inputs.forEach((input) => {
-  input.addEventListener("focus", function () {
-    input.classList.add("active")
-  });
-
-  input.addEventListener("blur", function () {
-    input.classList.remove("active")}
-  );
+labels.forEach((label) => {
+  label.innerHTML = label.innerText
+    .split("")
+    .map((letter, idx) => `<span style="transition-delay:${idx * 100}ms">${letter}</span>`)
+    .join("");
 });
