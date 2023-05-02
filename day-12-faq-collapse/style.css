@@ -91,22 +91,34 @@ p {
   position: absolute;
   top: 15px;
   right: 20px;
-
+  z-index: 0;
 }
 
-.btn .fa-close {
-  display: none;
+.fa-close {
+  z-index: 1;
 }
 
-.active .btn .fa-close {
-  display: block;
-  margin-right: 10px;
+.after {
+  z-index: -1;
 }
 
-.active .btn .close {
-  display: block;
-}
-
-.active .btn .arrow-down {
-  display: none;
+.btna {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1;
 }
