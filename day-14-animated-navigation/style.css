@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,300;1,400;1,500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Anuphan', ' Montserrat';
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+    to top,
+    #5a2750 0%,
+    #5a2750 50%,
+    #441f3d 50%,
+    #441f3d 100%
+  );
+}
+
+.navbar {
+  display: flex;
+  background-color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: rgb(76, 41, 99);
+  height: 80px;
+  width: 480px;
+  transition: width 0.4s linear;
+  border-radius: 3px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  transition: width 0.6s linear;
+}
+
+.btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  transform: rotateY(360deg);
+  opacity: 1;
+  transition: 0.6s linear, opacity 0.6s linear;
+}
+
+.close {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  color: rgb(206, 132, 255);
+  transition: 0.6s linear;
+  HEIGHT: 60px;
+  WIDTH: 60px;
+  position: relative;
+}
+
+.btn:hover {
+  color: rgb(141, 77, 183);
+}
+
+.close:hover {
+  color: rgb(141, 77, 183);
+}
+
+.navbar.active .buttons .btn {
+  padding: 0px;
+  width: 0px;
+  margin: 0px;
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar.active {
+  width: 80px;
+}
+
+
+.navbar.active .buttons .btn {
+  transform: rotateY(0deg);
+  opacity: 0;
+}
+
+.line {
+  background-color: rgb(206, 132, 255);
+  height: 3px;
+  width: 25px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transition: 0.6s linear;
+}
+
+.line1 {
+  transform: rotate(405deg);
+}
+
+.line2 {
+  transform: rotate(-405deg);
+}
+
+
+.navbar.active .close .line {
+  background-color: rgb(206, 132, 255);
+  height: 3px;
+  width: 25px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.navbar.active .close .line1 {
+  transform: rotate(0deg);
+  position: absolute;
+  top: 42%;
+}
+
+.navbar.active .close .line2 {
+  transform: rotate(0deg);
+  position: absolute;
+  top: 58%;
+}
