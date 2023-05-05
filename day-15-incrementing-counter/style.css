@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Anuphan', ' Montserrat';
   margin: 0;
@@ -11,4 +12,51 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  background-color: rgb(94, 39, 98);
+  color: rgb(255, 247, 237);
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  margin: 30px;
+  text-align: center;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+.counter {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.fa-youtube {
+  color: rgb(255, 0, 0);
+}
+
+.fa-twitter {
+  color: rgb(0, 172, 238);
+}
+
+.fa-instagram {
+  border-radius: 10px;
+  width: 42px;
+  height: 42px;
+  color: #fff;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
 }
