@@ -26,9 +26,8 @@ async function getMovies(url) {
       ${ratingColor(movie.vote_average)}
       </div>
       <div class="overview">
-        <h1>${movie.title}</h1>
+        <h1>${movie.title} ${ytsLink(movie.title, movie.release_date)}</h1>
         <p>${movie.overview}</p>
-        ${ytsLink(movie.title, movie.release_date)}
       </div>
     </div>`
   })

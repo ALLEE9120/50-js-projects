@@ -185,3 +185,8 @@ body {
     margin-left: 0px;
   }
 }
+
+a {
+  text-decoration: none;
+  color: #212A3E;
+}
