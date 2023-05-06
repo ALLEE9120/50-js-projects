@@ -9,6 +9,10 @@ const movies = document.querySelector('.movies')
 const showMore = document.querySelector('.show-more')
 
 
+const allMovies = document.querySelector('.movie')
+
+
+
 async function getMovies(url) {
     const res = await fetch(url)
     const data = await res.json()
@@ -24,9 +28,20 @@ async function getMovies(url) {
       <div class="overview">
         <h1>${movie.title}</h1>
         <p>${movie.overview}</p>
+        ${ytsLink(movie.title, movie.release_date)}
       </div>
     </div>`
-    })
+  })
+}
+
+function ytsLink(title, date) {
+  const year = date.split('-')[0]
+  const search = title + ' ' + year
+  const final = search.replace(/\s+/g, '-');
+  const lower = final.toLowerCase()
+  const correctedTitle = lower.replace(/['!,:]/g, "");
+  console.log(correctedTitle)
+  return `<a href="https://yts.mx/movies/${correctedTitle}">YTS</a>`
 }
 
 function ratingColor(rating) {
