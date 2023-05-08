@@ -74,3 +74,8 @@ body::before {
 .right-arrow {
   right: calc(15vw - 65px)
 }
+
+.arrow:hover {
+  background-color: #ff8f20;
+  color: #000;
+}
