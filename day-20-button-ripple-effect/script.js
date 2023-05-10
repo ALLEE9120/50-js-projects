@@ -10,6 +10,5 @@ button.addEventListener('click', (e) => {
   const trueX = x - buttonLeft;
   const trueY = y - buttonTop;
 
-  console.log(trueX, trueY);
   button.innerHTML = `Click Me   <span class="circle" style="top: ${trueY}px; left: ${trueX}px;"></span>`
 })
