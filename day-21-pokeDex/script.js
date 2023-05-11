@@ -1,8 +1,8 @@
 const cards = document.querySelector(".cards")
-
+let offset = 0
 async function pokemonData() {
   const response = await
-  fetch("https://pokeapi.co/api/v2/pokemon/")
+  fetch(`https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=54`)
   const jsonData = await response.json();
   jsonData.results.forEach(pokemon => {
     fetch(`${pokemon.url}`)
@@ -44,3 +44,19 @@ async function pokemonData() {
 }
 
 pokemonData()
+
+const next = document.querySelector(".next")
+
+next.addEventListener("click", () => {
+  cards.innerHTML = ""
+  offset += 54
+  pokemonData()
+})
+
+const previous = document.querySelector(".previous")
+
+previous.addEventListener("click", () => {
+  cards.innerHTML = ""
+  offset -= 54
+  pokemonData()
+})
