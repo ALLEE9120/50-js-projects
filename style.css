@@ -36,7 +36,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .btn {
-  padding: 20px 40px;
+  padding: 15px 20px;
   background-color: rgb(157, 0, 204);
   color: aliceblue;
   border-radius: 1px;
@@ -48,7 +48,9 @@ button, input[type="submit"], input[type="reset"] {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   position: relative;
-  margin: 20px;
+  margin: 15px;
+  width: 250px;
+  height: 80px;
 }
 
 .btn:hover {
