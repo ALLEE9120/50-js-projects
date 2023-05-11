@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,300;1,400;1,500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Anuphan', ' Montserrat';
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  padding: 20px 40px;
+  background-color: rgb(157, 0, 204);
+  color: aliceblue;
+  border-radius: 1px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  margin: 20px;
+}
+
+.btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(157, 0, 204);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn .circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 0.5s ease-in-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
