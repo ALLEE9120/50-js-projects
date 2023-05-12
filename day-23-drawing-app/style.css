@@ -9,6 +9,71 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   overflow: hidden;
+  background-color: #444;
+  color: aliceblue;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+canvas {
+  border: 1px solid #ff9b20;
+  background-color: rgb(221, 221, 221);
+}
+
+.toolbox {
+
+  background-color: #ff9b20;
+  width: 602px;
+}
+
+.toolbox > * {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toolbox > *:last-child {
+  margin-left: auto;
+}
+
+.toolbox > * {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #ff9b20;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  height: 55px;;
+}
+
+button:hover {
+  background-color: #ff7f00;
+}
+
+#increase {
+  font-size: 2rem;
+  width: 55px;
+}
+
+#decrease {
+  font-size: 2rem;
+  width: 55px;
 }
