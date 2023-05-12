@@ -6,7 +6,6 @@ const boxesDiv = document.querySelector('.boxes');
 function colorfr(numberForTimeout) {
   boxes.forEach(box => {
     box.addEventListener('mouseover', function() {
-      pickRandomColor();
       box.style.backgroundColor = pickRandomColor();
       setTimeout(() => {
       box.style.backgroundColor = "rgb(108, 108, 108)";
@@ -14,8 +13,6 @@ function colorfr(numberForTimeout) {
     })
   });
 }
-
-colorfr(7000)
 
 
 function pickRandomColor() {
