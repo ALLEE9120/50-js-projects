@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Anuphan', ' Montserrat';
   margin: 0;
@@ -12,7 +13,7 @@ body {
   flex-direction: column;
   height: 100vh;
   overflow: hidden;
-  background-color: #444;
+  background-color: #959595;
   color: aliceblue;
 }
 
@@ -27,8 +28,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 canvas {
-  border: 1px solid #ff9b20;
-  background-color: rgb(221, 221, 221);
+  border: 2px solid #ff9b20;
 }
 
 .toolbox {
@@ -76,4 +76,30 @@ button:hover {
 #decrease {
   font-size: 2rem;
   width: 55px;
+}
+
+canvas {
+  border: 1px solid black;
+  display: block;
+  margin: 20px auto;
+}
+
+.toolbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toolbox button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.toolbox input[type="color"] {
+  margin: 0 10px;
+}
+
+#circle.active {
+  background-color: #ff7f00;
 }
