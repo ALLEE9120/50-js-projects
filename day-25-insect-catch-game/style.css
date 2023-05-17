@@ -11,7 +11,7 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  background-color: rgb(8, 51, 0);
+  background-color: #146C94;
   color: white;
 }
 
@@ -37,7 +37,7 @@ button, input[type="submit"], input[type="reset"] {
 .page1 .btn {
   padding: 10px;
   background-color: white;
-  color: rgb(8, 51, 0);
+  color: #19A7CE;
   font-weight: 600;
   width: 150px;
   box-shadow: -1px 1px 4px rgb(0, 0, 0);
@@ -88,7 +88,7 @@ button, input[type="submit"], input[type="reset"] {
   justify-content: center;
   width: 100px;
   height: 100px;
-  border: 1px solid white;
+  border: 2px solid #146C94;
   cursor: pointer;
   position: relative;
 }
@@ -125,7 +125,7 @@ button, input[type="submit"], input[type="reset"] {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgb(8, 51, 0);
+  background-color: #19A7CE;
   color: white;
   font-size: 1.2rem;
   font-weight: 600;
@@ -139,7 +139,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .page3 .game {
-  background-color: rgb(0, 75, 7);
+  background-color: #146C94;
   width: 100vw;
   height: 80%;
 }

@@ -57,9 +57,8 @@ function createRapper(selected_rapper) {
   img.style.left = `${x}px`
   img.style.transform = `rotateZ(${Math.random() * 360}deg)`
   rapper.addEventListener('click', () => {
-    for (let i = 0; i < (1 + scoreS) + 1; i++) {
-      createRapper(selected_rapper);
-    }
+    createRapper(selected_rapper);
+    createRapper(selected_rapper);
     scoreS += 1
     const score = document.querySelector('.score')
     score.innerHTML = `<h1>Score: <span class="scoreNum">${scoreS}</span></h1>`
