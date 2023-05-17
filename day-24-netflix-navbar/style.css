@@ -3,12 +3,150 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Anuphan', ' Montserrat';
   margin: 0;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: center; */
+  height: 100%;
   overflow: hidden;
+  background-color: #242424;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.logo{
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+.one {
+  width:300px;
+  height: 100vh;
+  background-color: #000000;
+  position: absolute;
+  transition: 0.5s;
+  z-index: 1;
+  left: -300px;
+}
+
+.two {
+  width:320px;
+  height: 100vh;
+  background-color: #000000;
+  position: absolute;
+  transition: 0.5s;
+  left: -320px;
+}
+
+.three {
+  width:340px;
+  height: 100vh;
+  background-color: #000000;
+  position: absolute;
+  transition: 0.5s;
+  left: -340px;
+}
+
+.fa-bars{
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.fa-close {
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  left: 260px;
+  transition: 1s;
+}
+
+.fa-bars.active {
+  opacity: 0;
+}
+
+.header {
+  position: relative;
+}
+
+.nav.active .one h2 {
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav.active .one {
+  width:300px;
+  height: 100vh;
+  margin: 0px;
+  position: absolute;
+  left: 0px;
+}
+
+.two.active {
+  width:320px;
+  height: 100vh;
+  background-color: #E50914;
+  position: absolute;
+  left: 0px;
+}
+
+
+.three.active {
+  width:340px;
+  height: 100vh;
+  background-color: #000000;
+  position: absolute;
+  left: 0px;
+}
+
+.netflix {
+  width: 130px;
+  height: auto;
+}
+
+li {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  cursor: pointer;
+  width: 100px;
+}
+
+.sub {
+  font-size: 15px;
+}
+
+.nav .netflix {
+  margin-top: 5px;
+  margin-left: 20px;
 }
