@@ -71,7 +71,17 @@ function createRapper(selected_rapper) {
 function getRandomLocation() {
   const width = window.innerWidth
   const height = window.innerHeight
-  const x = Math.random() * (width) + 1
-  const y = Math.random() * (height) + 1
+  let x = Math.random() * (width)
+  if (x < 20) {
+    x = x + 20
+  } else if (x > (window.innerWidth - 100)) {
+    x = x - 100
+  }
+  let y = Math.random() * (height)
+  if (y < 20) {
+    y = y + 20
+  } else if (y > (window.innerHeight - 200)) {
+    y = y - 200
+  }
   return {x, y}
 }
