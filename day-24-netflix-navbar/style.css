@@ -44,7 +44,7 @@ button, input[type="submit"], input[type="reset"] {
 .two {
   width:320px;
   height: 100vh;
-  background-color: #000000;
+  background-color: #000001;
   position: absolute;
   transition: 0.5s;
   left: -320px;
